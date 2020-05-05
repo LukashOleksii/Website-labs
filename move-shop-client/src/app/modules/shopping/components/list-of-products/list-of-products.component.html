@@ -1,0 +1,12 @@
+
+<div class="list-of-products">
+			<div class="box" *ngFor="let shoe of shoes">
+				<img class="shoes" src="{{shoe.image}}" alt="">
+				<div class="description">
+					<h4>{{ shoe.brand }} {{shoe.model}}</h4>
+					<h5>{{ shoe.price }}$</h5>
+          <br>
+          <button>Buy now</button>
+			  </div>
+		  </div>
+</div>

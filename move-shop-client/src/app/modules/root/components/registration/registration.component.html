@@ -1,0 +1,46 @@
+
+<div class="registration_form" *ngIf="showMe.show">
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <button class="closebtn" (click)="closeRegistration()">✖</button>
+      <h1 style="margin-left: 19px">Registration</h1>
+    <div>
+      <label for="name">Your name:</label>
+      <input type="text" name="name" required [(ngModel)]="user.first_name">
+    </div>
+    <div>
+      <label for="surname">Your surname:</label>
+      <input type="text" name="surname" required [(ngModel)]="user.last_name">
+    </div>
+    <div>
+      <label for="username">Your login:</label>
+      <input type="text" name="username" required [(ngModel)]="user.username">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" required [(ngModel)]="user.email">
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" required [(ngModel)]="user.password">
+    </div>
+
+
+
+    <button class="registerbtn" type="submit">Sign up</button>
+    <div>
+      <h1 style="float: none">Sign in with</h1>
+      <div class="soc">
+        <button class="social gl" id="googlebtn"><img
+          src="../../../../../assets/img_registration/google-logo.png" height="50" width="50"/></button>
+        <button class="social fb" id="facebookbtn"><img
+          src="../../../../../assets/img_registration/facebook-logo.png" height="50" width="50"/></button>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+</div>
+

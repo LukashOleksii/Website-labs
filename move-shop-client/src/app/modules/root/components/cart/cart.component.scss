@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,700i&display=swap');
+*{
+  font-family: Montserrat,sans-serif;
+  font-size: 16px;
+
+}
+.cart{
+  position: absolute;
+  //width: 300px;
+}
+
+.container {
+  padding: 16px;
+  width: 280px;
+  //height: 380px;
+  background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.8), silver);
+
+
+  border-radius: 0 0 10px 10px;
+}
+
+label{
+  color: #EFEFEF;
+  font-weight: bolder;
+  margin-bottom:20px ;
+}
+
+.item{
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  border-radius: 12px;
+  border:  solid 2px #EFEFEF;
+
+}
+
+.left-box{
+
+  position: absolute;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 40%;
+  height: 100px;
+  border-radius: 10px 0 0 10px;
+
+}
+
+.right-box{
+  position: absolute;
+  box-sizing: border-box;
+  left: 40%;
+  width: 55%;
+
+  height: 100px;
+  border-radius: 0 10px 10px 0;
+
+
+  .remove{
+    position: absolute;
+    border-radius: 10px;
+    font-weight: bolder;
+    left: 138px;
+    border: none ;
+    background: transparent;
+    cursor: pointer;
+    padding-bottom: 20px;
+    //height: 10px;
+    //width: 10px;
+  }
+  .name{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .param{
+    margin-left: 5px;
+    width: 160px;
+    h1{
+      font-size: 14px;
+    }
+
+    padding: 10px;
+    display: inline-flex;
+
+    .price h1{
+      margin-left: 50px;
+    }
+  }
+  .quantity{
+    button{
+      border-radius: 20px;
+      height: 25px;
+      width: 25px;
+      background: linear-gradient(white,silver,gray);
+    }
+    .minus{
+      margin-left: 16px;
+    }
+    display: inline-flex;
+    margin-top:-10px;
+    .count{
+      width: 60px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      margin-left: 15px;
+      margin-right: 15px;
+      background: linear-gradient(white,silver,gray);
+      color: black;
+      h2{
+        font-weight: bolder;
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+
+}
+.underline{
+  margin: 10px 0 10px 0;
+}
+.space-line{
+  margin-top: 10px;
+  height: 1.5px;
+  background: dimgray;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.btn{
+  width: 10%;
+  min-width: 120px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 22px;
+  background: #004BA8;
+  border-radius: 10px;
+  border: none ;
+  color: #EFEFEF;
+
+}
+button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+

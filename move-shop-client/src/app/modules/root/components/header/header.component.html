@@ -1,0 +1,57 @@
+
+<header>
+
+  <div class="logo">
+    <a routerLink="/home"><img
+            width="60"
+            alt="Logo"
+            src="../../../../../assets/img_header/lg.png" height="60" width="45"
+    /></a>
+  </div>
+
+  <div class="toolbar" >
+    <div class="list">
+      <ul >
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/shopping">Catalog</a></li>
+        <li><a routerLink="/about-us">About us</a></li>
+        <li><a routerLink="/faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <img (click)="viewMenu()" class="menu" src="../../../../../assets/menu_white.png" width="25" alt="Menu" style="margin-left: 20px">
+    <div style=" position: absolute; top: 80px;left: 80px; background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.8), silver);">
+      <app-menu [showMenu]="menuVar" ></app-menu>
+    </div>
+
+    <div class="login" *ngIf="loginVar">
+<!--      (click)="toggleChild()"-->
+      <div   >
+        <button type="button"  (click)="close()" routerLink="/login" > Log in</button>
+      </div>
+
+    </div>
+    <div class="login" *ngIf="!loginVar">
+      <div class="icon" style="display: inline-flex">
+        <img (click)="viewFavorite()" class="one"  src="../../../../../assets/img_header/heart.png" height="26"/>
+        <div style=" position: absolute; left: 85px; top: 80px; ">
+          <app-favorite [showFavorite]="favoriteVar"></app-favorite>
+        </div>
+        <img (click)="viewCart()" class="second" src="../../../../../assets/img_header/cart.png" height="28" />
+
+        <div style=" position: absolute; left: 85px; top: 80px; ">
+          <app-cart [showCart]="cartVar" ></app-cart></div>
+        </div>
+
+
+      <div (click)="onLogOut()"   >
+        <button type="button"   >Log out</button>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+

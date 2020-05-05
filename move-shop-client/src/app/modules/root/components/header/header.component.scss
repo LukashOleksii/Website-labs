@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,700i&display=swap');
+$primary-color: #071222;
+$text-color: #EFEFEF;
+$hover-color: gray;
+
+* {
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  color: $text-color;
+  box-sizing: border-box;
+}
+
+header{
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.5));
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo{
+  margin-left: 70px;
+  margin-top: 10px;
+
+}
+
+.toolbar {
+  height: 80px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+
+}
+.list{
+  position: absolute;
+  float: right;
+  right: 10%;
+
+
+  ul{
+    margin-right: 50px;
+  }
+  li{
+
+    display: inline-flex;
+    margin-left: 50px;
+
+
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: $hover-color;
+  }
+  a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: $hover-color;
+    position: absolute;
+    bottom: 48px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  a:hover::before{
+    width: 100%;
+  }
+}
+
+.icon {
+  margin-left: 30px;
+  img{
+    margin-right: 30px;
+  }
+  img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.login [type="button"]{
+  font-weight: bold;
+  position: absolute;
+  min-width: 120px;
+  width: 90px;
+  height: 35px;
+  border-radius: 5px;
+  top: 20px;
+  right: 3%;
+  font-size: 18px;
+  line-height: 22px;
+  background: rgba(0, 0, 0, 0.4);
+
+  border: none ;
+
+  text-align: center;
+}
+.login :hover{
+  cursor: pointer;
+
+}
+@media (max-width: 1180px){
+  .list{
+    right: 15%;
+  }
+
+}
+
+@media (max-width: 780px){
+  .logo{
+    margin-left: 40px;
+  }
+  .list{
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 780px) {
+  .menu {
+
+    display: none;
+  }
+}
+
+
+
+

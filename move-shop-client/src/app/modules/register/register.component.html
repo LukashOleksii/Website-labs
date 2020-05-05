@@ -1,0 +1,24 @@
+<div class="fon">
+  <div id="register">
+    <form (ngSubmit)="onSubmit()">
+      <div class="left-box">
+        <h1>Sing up</h1>
+        <input type="text" name="name" placeholder="First-name" required [(ngModel)]="user.first_name">
+        <input type="text" name="surname" placeholder="Surname" required [(ngModel)]="user.last_name">
+        <input type="text" name="username" placeholder="Username" required [(ngModel)]="user.username">
+        <input type="text" name="email" placeholder="Email" required [(ngModel)]="user.email">
+        <input type="password" name="password" placeholder="Password" required [(ngModel)]="user.password">
+        <button class="registerbtn" type="submit">Sign up</button>
+      </div>
+      <div class="right-box">
+        <span class="signinwith">Sing in with <br>Social Network</span>
+        <div class="soc">
+          <button class="social fb"> <span>Log in with Facebook</span></button>
+          <button class="social tw"> <span>Log in with Twitter</span></button>
+          <button class="social gl"> <span>Log in with Google</span></button>
+        </div>
+      </div>
+      <div class="or">OR</div>
+    </form>
+  </div>
+</div>

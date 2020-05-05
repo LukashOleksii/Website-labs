@@ -1,0 +1,208 @@
+
+.fon{
+  height: 800px;
+  background: url("../../../assets/f.jpg");
+  background-size: cover;
+  margin-top: -192px;
+}
+
+#register{
+  position: absolute;
+  top:25%;
+  left: 28%;
+  //margin: 25% 28%;
+  height: 400px;
+  width: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) ;
+}
+
+.left-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding:40px;
+  width: 300px;
+  height: 100%;
+}
+
+h1{
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+  color: #fff;
+  width: 90%;
+  border-bottom: 3px solid #fff;
+}
+
+input[type="text"], input[type="password"]{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 80%;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  transition: 0.2s ease;
+  background: transparent ;
+  color: #EFEFEF;
+
+}
+button[type="submit"]{
+  margin-top: 2px;
+  width: 45%;
+  height: 32px;
+  background-image: url("../../../assets/fo.jpg");
+
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus{
+  background: black;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.right-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 50%;
+  height: 100%;
+  background-image: url("../../../assets/fo.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.or{
+  position: absolute;
+  top: 180px;
+  left: 47%;
+  width: 40px;
+  height: 40px;
+  background: #efefef;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right-box .signinwith{
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+button.social{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.fb{
+  background: #32508e;
+}
+.tw{
+  background: #2ca3e0;
+}
+.gl{
+  background: #ea4335;
+}
+@media(max-width: 1100px){
+  #register{
+    //margin: 35% 22%;
+    left:24%;
+  }
+}
+@media(max-width: 1000px){
+  #register{
+    width: 60%;
+
+  }
+}
+@media(max-width: 800px){
+  #register{
+    width: 70%;
+    //margin: 85% 22%;
+    left:18%;
+
+  }
+}
+
+
+@media(max-width: 700px){
+  #register{
+    width: 80%;
+    left:10%;
+
+  }
+  h1{
+    width: 100%;
+  }
+  .left-box{
+    width: 60%;
+  }
+  .right-box{
+    width: 40%;
+
+    text-align: center;
+  }
+  .or{
+    left: 55%
+  }
+  .right-box .signinwith{
+    display: none;
+  }
+  .soc{
+    margin-left: 25%;
+  }
+  button.social{
+    margin-top: 40px;
+
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+  span{
+    display: none;
+  }
+  .fb{
+    background-image: url("../../../assets/Facebook.png");
+  }
+  .tw{
+    background-image: url("../../../assets/Twitter.png");
+  }
+  .gl{
+    background-image: url("../../../assets/Google.png");
+  }
+}
+@media (max-width: 500px) {
+  input[type="text"], input[type="password"] {
+
+    width: 90%;
+  }
+
+  .soc {
+    margin-left: 15%;
+  }
+}

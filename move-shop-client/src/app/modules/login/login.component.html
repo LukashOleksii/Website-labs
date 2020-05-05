@@ -1,0 +1,26 @@
+<div class="login">
+  <form>
+    <div class="form-box">
+      <h1>Login</h1>
+
+      <div class="container">
+
+        <label><p>Username</p></label>
+        <input type="text" name="username" placeholder="Login " required [(ngModel)]="user.username">
+        <label><p>Password</p></label>
+        <input type="password" name="password" placeholder="Password " required [(ngModel)]="user.password">
+
+
+      </div>
+      <div class="btn">
+        <button  (click)="onLogin()" type="submit" > Sing in </button>
+        <button type="submit"> <a routerLink="/register">Sing up!</a></button>
+      </div>
+
+      <div class="msg">
+        <span><a href="#"> Forgot your password?</a></span>
+      </div>
+
+    </div>
+  </form>
+</div>
