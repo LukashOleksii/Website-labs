@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RootComponent } from './root.component';
 
-describe('RootComponent', () => {
+fdescribe('RootComponent', () => {
   let component: RootComponent;
   let fixture: ComponentFixture<RootComponent>;
 
@@ -10,7 +10,7 @@ describe('RootComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ RootComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
